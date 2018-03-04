@@ -13,6 +13,7 @@
 		10BFDA18204C303D0089D9F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10BFDA17204C303D0089D9F1 /* Assets.xcassets */; };
 		10BFDA1B204C303D0089D9F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10BFDA19204C303D0089D9F1 /* LaunchScreen.storyboard */; };
 		10BFDA26204C303D0089D9F1 /* iosTwitterClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BFDA25204C303D0089D9F1 /* iosTwitterClientTests.swift */; };
+		10BFDA32204C34D70089D9F1 /* RepositoryTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BFDA31204C34D70089D9F1 /* RepositoryTool.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		10BFDA21204C303D0089D9F1 /* iosTwitterClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosTwitterClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10BFDA25204C303D0089D9F1 /* iosTwitterClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosTwitterClientTests.swift; sourceTree = "<group>"; };
 		10BFDA27204C303D0089D9F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10BFDA31204C34D70089D9F1 /* RepositoryTool.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RepositoryTool.framework; path = Carthage/Build/iOS/RepositoryTool.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10BFDA32204C34D70089D9F1 /* RepositoryTool.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +62,11 @@
 		10BFDA04204C303D0089D9F1 = {
 			isa = PBXGroup;
 			children = (
+				10BFDA35204C36E90089D9F1 /* Documents */,
 				10BFDA0F204C303D0089D9F1 /* iosTwitterClient */,
 				10BFDA24204C303D0089D9F1 /* iosTwitterClientTests */,
 				10BFDA0E204C303D0089D9F1 /* Products */,
+				10BFDA30204C34D60089D9F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +101,21 @@
 			path = iosTwitterClientTests;
 			sourceTree = "<group>";
 		};
+		10BFDA30204C34D60089D9F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10BFDA31204C34D70089D9F1 /* RepositoryTool.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		10BFDA35204C36E90089D9F1 /* Documents */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Documents;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,6 +126,8 @@
 				10BFDA09204C303D0089D9F1 /* Sources */,
 				10BFDA0A204C303D0089D9F1 /* Frameworks */,
 				10BFDA0B204C303D0089D9F1 /* Resources */,
+				10BFDA33204C36020089D9F1 /* ShellScript */,
+				10BFDA34204C36710089D9F1 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -193,6 +215,37 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10BFDA33204C36020089D9F1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RepositoryTool.framework",
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RepositoryTool.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		10BFDA34204C36710089D9F1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage outdated --xcode-warnings";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		10BFDA09204C303D0089D9F1 /* Sources */ = {
@@ -354,7 +407,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BLC5H2QH6K;
+				DEVELOPMENT_TEAM = KE8PEF6922;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = iosTwitterClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.sundaycarpenter.iosTwitterClient;
@@ -369,7 +426,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BLC5H2QH6K;
+				DEVELOPMENT_TEAM = KE8PEF6922;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = iosTwitterClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.sundaycarpenter.iosTwitterClient;
