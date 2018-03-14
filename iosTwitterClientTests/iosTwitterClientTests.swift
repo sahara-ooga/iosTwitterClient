@@ -8,8 +8,10 @@
 
 import XCTest
 @testable import iosTwitterClient
+import RepositoryTool
 
 class iosTwitterClientTests: XCTestCase {
+    let repo = TestModel()
     
     override func setUp() {
         super.setUp()
@@ -24,13 +26,38 @@ class iosTwitterClientTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+}
+
+struct TestRepoEle:RepositoryElement {
+    var id: String
+    
+    typealias Identifier = String
+
+}
+
+struct TestModel:SyncRepository {
+    
+    func find(of id: TestModel.Element.Identifier) -> TestModel.Element? {
+        return nil
     }
+    
+    func findAll(query: Query?) -> [TestModel.Element] {
+        return [TestRepoEle(id:"id")]
+    }
+    
+    func save(_ elements: [TestModel.Element]) -> Bool {
+        return true
+    }
+    
+    func delete(_ elements: [TestModel.Element]) -> Bool {
+        return true
+    }
+    
+    typealias Element = TestRepoEle
+    
     
 }

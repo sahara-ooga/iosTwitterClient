@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10AE85EA205978AB00A52E8C /* RepositoryTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BFDA31204C34D70089D9F1 /* RepositoryTool.framework */; };
 		10BFDA11204C303D0089D9F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BFDA10204C303D0089D9F1 /* AppDelegate.swift */; };
 		10BFDA13204C303D0089D9F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BFDA12204C303D0089D9F1 /* ViewController.swift */; };
 		10BFDA16204C303D0089D9F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10BFDA14204C303D0089D9F1 /* Main.storyboard */; };
@@ -53,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10AE85EA205978AB00A52E8C /* RepositoryTool.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +147,7 @@
 				10BFDA1D204C303D0089D9F1 /* Sources */,
 				10BFDA1E204C303D0089D9F1 /* Frameworks */,
 				10BFDA1F204C303D0089D9F1 /* Resources */,
+				10AE85E92059786900A52E8C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -217,6 +220,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		10AE85E92059786900A52E8C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RepositoryTool.framework",
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RepositoryTool.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
 		10BFDA33204C36020089D9F1 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -447,6 +465,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BLC5H2QH6K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = iosTwitterClientTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.sundaycarpenter.iosTwitterClientTests;
@@ -464,6 +486,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BLC5H2QH6K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = iosTwitterClientTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.sundaycarpenter.iosTwitterClientTests;
