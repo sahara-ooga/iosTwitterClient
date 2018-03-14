@@ -29,24 +29,23 @@ class iosTwitterClientTests: XCTestCase {
         
     }
     
-    
 }
 
-struct TestRepoEle:RepositoryElement {
+struct TestRepoEle: RepositoryElement {
     var id: String
     
     typealias Identifier = String
 
 }
 
-struct TestModel:SyncRepository {
+struct TestModel: SyncRepository {
     
     func find(of id: TestModel.Element.Identifier) -> TestModel.Element? {
         return nil
     }
     
     func findAll(query: Query?) -> [TestModel.Element] {
-        return [TestRepoEle(id:"id")]
+        return [TestRepoEle(id: "id")]
     }
     
     func save(_ elements: [TestModel.Element]) -> Bool {
@@ -58,6 +57,5 @@ struct TestModel:SyncRepository {
     }
     
     typealias Element = TestRepoEle
-    
     
 }

@@ -8,11 +8,11 @@
   "tvOS" : [
 
   ],
-  "commitish" : "v0.1",
+  "commitish" : "0.1.1",
   "iOS" : [
     {
       "name" : "RepositoryTool",
-      "hash" : "52eb961f1d18e69466d4222eba51baa6f126e803cf27e031cb20d771168cc807"
+      "hash" : "765c5103c5f3476145677aabcfd2920bd976b6c120b31ac5e9ace9b54e5ea67f"
     }
   ]
 }
