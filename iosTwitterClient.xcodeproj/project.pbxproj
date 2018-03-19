@@ -17,10 +17,9 @@
 		10BFDA32204C34D70089D9F1 /* RepositoryTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BFDA31204C34D70089D9F1 /* RepositoryTool.framework */; };
 		10FFD7C9205F391D00A3CED4 /* FileOrganizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FFD7C8205F391D00A3CED4 /* FileOrganizer.swift */; };
 		10FFD7CD205FD90300A3CED4 /* FileOrganizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FFD7CC205FD90300A3CED4 /* FileOrganizerTests.swift */; };
-		10FFD7D0205FDC6900A3CED4 /* credential.json in Resources */ = {isa = PBXBuildFile; fileRef = 10FFD7CF205FDC6900A3CED4 /* credential.json */; };
-		10FFD7D1205FDC6900A3CED4 /* credential.json in Resources */ = {isa = PBXBuildFile; fileRef = 10FFD7CF205FDC6900A3CED4 /* credential.json */; };
 		10FFD7D3205FDF2500A3CED4 /* DataConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FFD7D2205FDF2500A3CED4 /* DataConvertible.swift */; };
 		10FFD7D6205FDFD300A3CED4 /* TwitterAPICredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FFD7D5205FDFD300A3CED4 /* TwitterAPICredential.swift */; };
+		10FFD7D8205FED6800A3CED4 /* credential.json in Resources */ = {isa = PBXBuildFile; fileRef = 10FFD7D7205FED6800A3CED4 /* credential.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,9 +46,9 @@
 		10BFDA31204C34D70089D9F1 /* RepositoryTool.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RepositoryTool.framework; path = Carthage/Build/iOS/RepositoryTool.framework; sourceTree = "<group>"; };
 		10FFD7C8205F391D00A3CED4 /* FileOrganizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileOrganizer.swift; sourceTree = "<group>"; };
 		10FFD7CC205FD90300A3CED4 /* FileOrganizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileOrganizerTests.swift; sourceTree = "<group>"; };
-		10FFD7CF205FDC6900A3CED4 /* credential.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = credential.json; sourceTree = "<group>"; };
 		10FFD7D2205FDF2500A3CED4 /* DataConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataConvertible.swift; sourceTree = "<group>"; };
 		10FFD7D5205FDFD300A3CED4 /* TwitterAPICredential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAPICredential.swift; sourceTree = "<group>"; };
+		10FFD7D7205FED6800A3CED4 /* credential.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = credential.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,9 +142,9 @@
 		10FFD7CE205FDC2600A3CED4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				10FFD7D7205FED6800A3CED4 /* credential.json */,
 				10BFDA19204C303D0089D9F1 /* LaunchScreen.storyboard */,
 				10BFDA17204C303D0089D9F1 /* Assets.xcassets */,
-				10FFD7CF205FDC6900A3CED4 /* credential.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -247,7 +246,7 @@
 			files = (
 				10BFDA1B204C303D0089D9F1 /* LaunchScreen.storyboard in Resources */,
 				10BFDA18204C303D0089D9F1 /* Assets.xcassets in Resources */,
-				10FFD7D0205FDC6900A3CED4 /* credential.json in Resources */,
+				10FFD7D8205FED6800A3CED4 /* credential.json in Resources */,
 				10BFDA16204C303D0089D9F1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,7 +255,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10FFD7D1205FDC6900A3CED4 /* credential.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
