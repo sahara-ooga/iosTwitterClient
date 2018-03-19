@@ -80,3 +80,8 @@ iOSInjectionProject/
 ### Objective-C Patch ###
 
 # End of https://www.gitignore.io/api/objective-c
+
+
+## Project specified
+
+credential.json
