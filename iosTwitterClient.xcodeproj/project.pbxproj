@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1011A853205FF45300D069B4 /* credential.json in Resources */ = {isa = PBXBuildFile; fileRef = 10FFD7D7205FED6800A3CED4 /* credential.json */; };
+		1011A855205FF53C00D069B4 /* TwitterKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1011A854205FF53C00D069B4 /* TwitterKitTests.swift */; };
+		1011A859205FF7F300D069B4 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1011A856205FF7F300D069B4 /* TwitterKit.framework */; };
+		1011A85A205FF7F300D069B4 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1011A857205FF7F300D069B4 /* TwitterCore.framework */; };
+		1011A85B205FF7F300D069B4 /* TwitterShareExtensionUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1011A858205FF7F300D069B4 /* TwitterShareExtensionUI.framework */; };
+		1011A85C205FFA4400D069B4 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1011A857205FF7F300D069B4 /* TwitterCore.framework */; };
+		1011A85D205FFA4400D069B4 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1011A856205FF7F300D069B4 /* TwitterKit.framework */; };
+		1011A85E205FFA4400D069B4 /* TwitterShareExtensionUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1011A858205FF7F300D069B4 /* TwitterShareExtensionUI.framework */; };
 		10AE85EA205978AB00A52E8C /* RepositoryTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BFDA31204C34D70089D9F1 /* RepositoryTool.framework */; };
 		10BFDA11204C303D0089D9F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BFDA10204C303D0089D9F1 /* AppDelegate.swift */; };
 		10BFDA13204C303D0089D9F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BFDA12204C303D0089D9F1 /* ViewController.swift */; };
@@ -33,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1011A854205FF53C00D069B4 /* TwitterKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterKitTests.swift; sourceTree = "<group>"; };
+		1011A856205FF7F300D069B4 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterKit.framework; path = Carthage/Build/iOS/TwitterKit.framework; sourceTree = "<group>"; };
+		1011A857205FF7F300D069B4 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterCore.framework; path = Carthage/Build/iOS/TwitterCore.framework; sourceTree = "<group>"; };
+		1011A858205FF7F300D069B4 /* TwitterShareExtensionUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterShareExtensionUI.framework; path = Carthage/Build/iOS/TwitterShareExtensionUI.framework; sourceTree = "<group>"; };
 		10BFDA0D204C303D0089D9F1 /* iosTwitterClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosTwitterClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10BFDA10204C303D0089D9F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10BFDA12204C303D0089D9F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +68,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1011A859205FF7F300D069B4 /* TwitterKit.framework in Frameworks */,
+				1011A85A205FF7F300D069B4 /* TwitterCore.framework in Frameworks */,
+				1011A85B205FF7F300D069B4 /* TwitterShareExtensionUI.framework in Frameworks */,
 				10BFDA32204C34D70089D9F1 /* RepositoryTool.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,6 +80,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				10AE85EA205978AB00A52E8C /* RepositoryTool.framework in Frameworks */,
+				1011A85C205FFA4400D069B4 /* TwitterCore.framework in Frameworks */,
+				1011A85D205FFA4400D069B4 /* TwitterKit.framework in Frameworks */,
+				1011A85E205FFA4400D069B4 /* TwitterShareExtensionUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +129,7 @@
 				10FFD7CC205FD90300A3CED4 /* FileOrganizerTests.swift */,
 				10BFDA25204C303D0089D9F1 /* iosTwitterClientTests.swift */,
 				10BFDA27204C303D0089D9F1 /* Info.plist */,
+				1011A854205FF53C00D069B4 /* TwitterKitTests.swift */,
 			);
 			path = iosTwitterClientTests;
 			sourceTree = "<group>";
@@ -118,6 +137,9 @@
 		10BFDA30204C34D60089D9F1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1011A857205FF7F300D069B4 /* TwitterCore.framework */,
+				1011A856205FF7F300D069B4 /* TwitterKit.framework */,
+				1011A858205FF7F300D069B4 /* TwitterShareExtensionUI.framework */,
 				10BFDA31204C34D70089D9F1 /* RepositoryTool.framework */,
 			);
 			name = Frameworks;
@@ -255,6 +277,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1011A853205FF45300D069B4 /* credential.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,9 +291,15 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/RepositoryTool.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/TwitterCore.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/TwitterKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/TwitterShareExtensionUI.framework",
 			);
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RepositoryTool.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/TwitterCore.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/TwitterKit.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/TwitterShareExtensionUI.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -296,9 +325,15 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/RepositoryTool.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/TwitterCore.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/TwitterKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/TwitterShareExtensionUI.framework",
 			);
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RepositoryTool.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/TwitterCore.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/TwitterKit.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/TwitterShareExtensionUI.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -336,6 +371,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1011A855205FF53C00D069B4 /* TwitterKitTests.swift in Sources */,
 				10BFDA26204C303D0089D9F1 /* iosTwitterClientTests.swift in Sources */,
 				10FFD7CD205FD90300A3CED4 /* FileOrganizerTests.swift in Sources */,
 			);
