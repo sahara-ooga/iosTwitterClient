@@ -16,8 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-//        TWTRTwitter.sharedInstance().start(withConsumerKey:"hTpkPVU4pThkM0",
-//                                           consumerSecret:"ovEqziMzLpUOF163Qg2mj")
+        initializeTwitterKit()
         return true
     }
 
@@ -36,4 +35,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
     }
 
+}
+
+extension AppDelegate {
+    func initializeTwitterKit() {
+        do {
+            let jsonName = "credential"
+            let credential = try TwitterAPICredential(json: jsonName)
+            TWTRTwitter.sharedInstance().start(withConsumerKey: credential.consumer_key,
+                                               consumerSecret: credential.consumer_secret)
+        } catch {
+            assertionFailure("can`t load twitter credential.")
+        }
+    }
 }

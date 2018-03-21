@@ -20,11 +20,10 @@
 		105BAE8E2062062A000141D1 /* iTCError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105BAE8D2062062A000141D1 /* iTCError.swift */; };
 		10AE85EA205978AB00A52E8C /* RepositoryTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BFDA31204C34D70089D9F1 /* RepositoryTool.framework */; };
 		10BFDA11204C303D0089D9F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BFDA10204C303D0089D9F1 /* AppDelegate.swift */; };
-		10BFDA13204C303D0089D9F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BFDA12204C303D0089D9F1 /* ViewController.swift */; };
+		10BFDA13204C303D0089D9F1 /* TimelineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BFDA12204C303D0089D9F1 /* TimelineVC.swift */; };
 		10BFDA16204C303D0089D9F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10BFDA14204C303D0089D9F1 /* Main.storyboard */; };
 		10BFDA18204C303D0089D9F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10BFDA17204C303D0089D9F1 /* Assets.xcassets */; };
 		10BFDA1B204C303D0089D9F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10BFDA19204C303D0089D9F1 /* LaunchScreen.storyboard */; };
-		10BFDA26204C303D0089D9F1 /* iosTwitterClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BFDA25204C303D0089D9F1 /* iosTwitterClientTests.swift */; };
 		10BFDA32204C34D70089D9F1 /* RepositoryTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BFDA31204C34D70089D9F1 /* RepositoryTool.framework */; };
 		10FFD7C9205F391D00A3CED4 /* FileOrganizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FFD7C8205F391D00A3CED4 /* FileOrganizer.swift */; };
 		10FFD7CD205FD90300A3CED4 /* FileOrganizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FFD7CC205FD90300A3CED4 /* FileOrganizerTests.swift */; };
@@ -54,13 +53,12 @@
 		105BAE8D2062062A000141D1 /* iTCError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTCError.swift; sourceTree = "<group>"; };
 		10BFDA0D204C303D0089D9F1 /* iosTwitterClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosTwitterClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10BFDA10204C303D0089D9F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		10BFDA12204C303D0089D9F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		10BFDA12204C303D0089D9F1 /* TimelineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineVC.swift; sourceTree = "<group>"; };
 		10BFDA15204C303D0089D9F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		10BFDA17204C303D0089D9F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10BFDA1A204C303D0089D9F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10BFDA1C204C303D0089D9F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10BFDA21204C303D0089D9F1 /* iosTwitterClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosTwitterClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		10BFDA25204C303D0089D9F1 /* iosTwitterClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosTwitterClientTests.swift; sourceTree = "<group>"; };
 		10BFDA27204C303D0089D9F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10BFDA31204C34D70089D9F1 /* RepositoryTool.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RepositoryTool.framework; path = Carthage/Build/iOS/RepositoryTool.framework; sourceTree = "<group>"; };
 		10FFD7C8205F391D00A3CED4 /* FileOrganizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileOrganizer.swift; sourceTree = "<group>"; };
@@ -133,7 +131,7 @@
 				10FFD7CE205FDC2600A3CED4 /* Resources */,
 				10FFD7C7205F38E400A3CED4 /* Utilities */,
 				10BFDA10204C303D0089D9F1 /* AppDelegate.swift */,
-				10BFDA12204C303D0089D9F1 /* ViewController.swift */,
+				10BFDA12204C303D0089D9F1 /* TimelineVC.swift */,
 				10BFDA14204C303D0089D9F1 /* Main.storyboard */,
 				10BFDA1C204C303D0089D9F1 /* Info.plist */,
 			);
@@ -144,7 +142,6 @@
 			isa = PBXGroup;
 			children = (
 				10FFD7CC205FD90300A3CED4 /* FileOrganizerTests.swift */,
-				10BFDA25204C303D0089D9F1 /* iosTwitterClientTests.swift */,
 				10BFDA27204C303D0089D9F1 /* Info.plist */,
 				1011A854205FF53C00D069B4 /* TwitterKitTests.swift */,
 				105BAE8A20620472000141D1 /* TwitterCredentialTests.swift */,
@@ -380,7 +377,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10BFDA13204C303D0089D9F1 /* ViewController.swift in Sources */,
+				10BFDA13204C303D0089D9F1 /* TimelineVC.swift in Sources */,
 				105BAE8E2062062A000141D1 /* iTCError.swift in Sources */,
 				10BFDA11204C303D0089D9F1 /* AppDelegate.swift in Sources */,
 				10FFD7D6205FDFD300A3CED4 /* TwitterAPICredential.swift in Sources */,
@@ -395,7 +392,6 @@
 			files = (
 				105BAE8B20620472000141D1 /* TwitterCredentialTests.swift in Sources */,
 				1011A855205FF53C00D069B4 /* TwitterKitTests.swift in Sources */,
-				10BFDA26204C303D0089D9F1 /* iosTwitterClientTests.swift in Sources */,
 				10FFD7CD205FD90300A3CED4 /* FileOrganizerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
