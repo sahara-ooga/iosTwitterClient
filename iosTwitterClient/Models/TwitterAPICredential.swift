@@ -12,3 +12,18 @@ struct TwitterAPICredential: JSONDataConvertible, Codable {
     let consumer_key: String
     let consumer_secret: String
 }
+
+extension TwitterAPICredential {
+    init(json jsonName: String) throws {
+        let j = FileOrganizer.open(json: jsonName)
+        
+        guard let json = j else {
+            throw iTCError.credentialLoad
+        }
+        
+        let credential = try TwitterAPICredential(json)
+        
+        self.consumer_key = credential.consumer_key
+        self.consumer_secret = credential.consumer_secret
+    }
+}

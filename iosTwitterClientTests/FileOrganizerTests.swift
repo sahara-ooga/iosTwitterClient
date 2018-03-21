@@ -11,7 +11,7 @@ import XCTest
 
 class FileOrganizerTests: XCTestCase {
     
-    let jsonFileName = ""
+    let jsonFileName = "credential"
     
     override func setUp() {
         super.setUp()

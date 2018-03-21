@@ -15,6 +15,9 @@
 		1011A85C205FFA4400D069B4 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1011A857205FF7F300D069B4 /* TwitterCore.framework */; };
 		1011A85D205FFA4400D069B4 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1011A856205FF7F300D069B4 /* TwitterKit.framework */; };
 		1011A85E205FFA4400D069B4 /* TwitterShareExtensionUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1011A858205FF7F300D069B4 /* TwitterShareExtensionUI.framework */; };
+		105BAE89206200A7000141D1 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 105BAE88206200A6000141D1 /* SafariServices.framework */; };
+		105BAE8B20620472000141D1 /* TwitterCredentialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105BAE8A20620472000141D1 /* TwitterCredentialTests.swift */; };
+		105BAE8E2062062A000141D1 /* iTCError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105BAE8D2062062A000141D1 /* iTCError.swift */; };
 		10AE85EA205978AB00A52E8C /* RepositoryTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10BFDA31204C34D70089D9F1 /* RepositoryTool.framework */; };
 		10BFDA11204C303D0089D9F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BFDA10204C303D0089D9F1 /* AppDelegate.swift */; };
 		10BFDA13204C303D0089D9F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BFDA12204C303D0089D9F1 /* ViewController.swift */; };
@@ -45,6 +48,10 @@
 		1011A856205FF7F300D069B4 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterKit.framework; path = Carthage/Build/iOS/TwitterKit.framework; sourceTree = "<group>"; };
 		1011A857205FF7F300D069B4 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterCore.framework; path = Carthage/Build/iOS/TwitterCore.framework; sourceTree = "<group>"; };
 		1011A858205FF7F300D069B4 /* TwitterShareExtensionUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterShareExtensionUI.framework; path = Carthage/Build/iOS/TwitterShareExtensionUI.framework; sourceTree = "<group>"; };
+		105BAE872061FF99000141D1 /* iosTwitterClient-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iosTwitterClient-Bridging-Header.h"; sourceTree = "<group>"; };
+		105BAE88206200A6000141D1 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		105BAE8A20620472000141D1 /* TwitterCredentialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterCredentialTests.swift; sourceTree = "<group>"; };
+		105BAE8D2062062A000141D1 /* iTCError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTCError.swift; sourceTree = "<group>"; };
 		10BFDA0D204C303D0089D9F1 /* iosTwitterClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosTwitterClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10BFDA10204C303D0089D9F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10BFDA12204C303D0089D9F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				105BAE89206200A7000141D1 /* SafariServices.framework in Frameworks */,
 				1011A859205FF7F300D069B4 /* TwitterKit.framework in Frameworks */,
 				1011A85A205FF7F300D069B4 /* TwitterCore.framework in Frameworks */,
 				1011A85B205FF7F300D069B4 /* TwitterShareExtensionUI.framework in Frameworks */,
@@ -89,6 +97,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		105BAE8C2062061B000141D1 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				105BAE8D2062062A000141D1 /* iTCError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
 		10BFDA04204C303D0089D9F1 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +128,7 @@
 		10BFDA0F204C303D0089D9F1 /* iosTwitterClient */ = {
 			isa = PBXGroup;
 			children = (
+				105BAE8C2062061B000141D1 /* Error */,
 				10FFD7D4205FDFB200A3CED4 /* Models */,
 				10FFD7CE205FDC2600A3CED4 /* Resources */,
 				10FFD7C7205F38E400A3CED4 /* Utilities */,
@@ -130,6 +147,7 @@
 				10BFDA25204C303D0089D9F1 /* iosTwitterClientTests.swift */,
 				10BFDA27204C303D0089D9F1 /* Info.plist */,
 				1011A854205FF53C00D069B4 /* TwitterKitTests.swift */,
+				105BAE8A20620472000141D1 /* TwitterCredentialTests.swift */,
 			);
 			path = iosTwitterClientTests;
 			sourceTree = "<group>";
@@ -137,6 +155,7 @@
 		10BFDA30204C34D60089D9F1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				105BAE88206200A6000141D1 /* SafariServices.framework */,
 				1011A857205FF7F300D069B4 /* TwitterCore.framework */,
 				1011A856205FF7F300D069B4 /* TwitterKit.framework */,
 				1011A858205FF7F300D069B4 /* TwitterShareExtensionUI.framework */,
@@ -155,7 +174,6 @@
 		10FFD7C7205F38E400A3CED4 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				10FFD7D2205FDF2500A3CED4 /* DataConvertible.swift */,
 				10FFD7C8205F391D00A3CED4 /* FileOrganizer.swift */,
 			);
 			path = Utilities;
@@ -167,6 +185,7 @@
 				10FFD7D7205FED6800A3CED4 /* credential.json */,
 				10BFDA19204C303D0089D9F1 /* LaunchScreen.storyboard */,
 				10BFDA17204C303D0089D9F1 /* Assets.xcassets */,
+				105BAE872061FF99000141D1 /* iosTwitterClient-Bridging-Header.h */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -175,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				10FFD7D5205FDFD300A3CED4 /* TwitterAPICredential.swift */,
+				10FFD7D2205FDF2500A3CED4 /* DataConvertible.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -233,6 +253,7 @@
 				TargetAttributes = {
 					10BFDA0C204C303D0089D9F1 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					10BFDA20204C303D0089D9F1 = {
@@ -360,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10BFDA13204C303D0089D9F1 /* ViewController.swift in Sources */,
+				105BAE8E2062062A000141D1 /* iTCError.swift in Sources */,
 				10BFDA11204C303D0089D9F1 /* AppDelegate.swift in Sources */,
 				10FFD7D6205FDFD300A3CED4 /* TwitterAPICredential.swift in Sources */,
 				10FFD7C9205F391D00A3CED4 /* FileOrganizer.swift in Sources */,
@@ -371,6 +393,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				105BAE8B20620472000141D1 /* TwitterCredentialTests.swift in Sources */,
 				1011A855205FF53C00D069B4 /* TwitterKitTests.swift in Sources */,
 				10BFDA26204C303D0089D9F1 /* iosTwitterClientTests.swift in Sources */,
 				10FFD7CD205FD90300A3CED4 /* FileOrganizerTests.swift in Sources */,
@@ -518,6 +541,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KE8PEF6922;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -528,6 +552,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.sundaycarpenter.iosTwitterClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iosTwitterClient/Resources/iosTwitterClient-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -537,6 +563,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KE8PEF6922;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -547,6 +574,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.sundaycarpenter.iosTwitterClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iosTwitterClient/Resources/iosTwitterClient-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
